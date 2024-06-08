@@ -21,3 +21,22 @@ As Designers, we frequently need to share specific frames or elements from Figma
 2. Click on the Figma Node ID Extractor extension icon in the Chrome toolbar.
 3. The extension will automatically extract the `Node id` and copy it to your clipboard.
 4. Paste the extracted `Node id` wherever needed.
+
+## Contributing
+
+We welcome contributions! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature-name
+    ```
+3. Make your changes and commit them:
+    ```bash
+    git commit -m 'Add some feature'
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature-name
+    ```
+5. Open a pull request.

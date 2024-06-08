@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Easy Copy Figma Node ID",
+    "version": "1.0",
+    "description": "A Chrome extension to extract and copy the Node ID from a Figma URL with a single click.",
+    "permissions": [
+      "activeTab",
+      "clipboardWrite",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+      }
+    },
+    "icons": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.figma.com/file/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "options_page": "options.html"
+  }
+  
