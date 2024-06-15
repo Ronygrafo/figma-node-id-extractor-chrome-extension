@@ -1,0 +1,12 @@
+{
+    "name": "figma-node-id-extractor",
+    "version": "1.0.0",
+    "description": "A Chrome extension to extract the Node ID from a Figma URL into the clipboard with a single click.",
+    "main": "scripts/popup.js",
+    "scripts": {},
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "chrome-types": "^0.1.287"
+    }
+}

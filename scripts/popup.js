@@ -1,13 +1,16 @@
-document.getElementById('extractBtn').addEventListener('click', async () => {
-    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-    chrome.scripting.executeScript({
-      target: { tabId: tab.id },
-      function: extractNodeId,
-    });
-  });
-  
-  function extractNodeId() {
-    const url = window.location.href;
+
+document.getElementById("extractBtn").addEventListener("click", async () => {
+  alert("Extracting node");
+/*   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+  chrome.scripting.executeScript({
+    target: { tabId: tab.id },
+    function: extractNodeId,
+  }); */
+});
+
+function extractNodeId() {
+  alert("Extracting node");
+  /* const url = window.location.href;
     const nodeIdMatch = url.match(/node-id=([\d%:]+)/);
     if (nodeIdMatch && nodeIdMatch[1]) {
       const nodeId = decodeURIComponent(nodeIdMatch[1]);
@@ -16,6 +19,5 @@ document.getElementById('extractBtn').addEventListener('click', async () => {
       });
     } else {
       alert('No Node ID found in URL');
-    }
-  }
-  
+    } */
+}
